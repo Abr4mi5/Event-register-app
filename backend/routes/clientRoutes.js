@@ -34,13 +34,10 @@ router.put("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const update = req.body;
-    console.log(id);
-    console.log(update);
     const result = await client
       .db("events")
       .collection("users")
       .updateOne({ _id: new ObjectId(id) }, { $set: update });
-
     res.send(result);
   } catch (err) {
     res.status(500).send({ err });
