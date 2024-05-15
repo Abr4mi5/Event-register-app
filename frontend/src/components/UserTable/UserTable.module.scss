@@ -1,0 +1,66 @@
+.usertable {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 2rem 2.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: #ffffff;
+  
+    th,
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+    }
+  
+    td {
+      &:nth-child(3) {
+        button {
+          margin-right: 5px;
+        }
+      }
+    }
+    .input {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      width: 100%;
+      
+    
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+  
+    button {
+        display: block;
+      padding: 5px 10px;
+      border: none;
+      width: 100%;
+      margin-bottom: 4px;
+      border-radius: 30px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #f0f0f0;
+      }
+  
+      &.edit {
+        background-color: #000000;
+        color: white;
+      }
+  
+      &.delete {
+        background-color: #f44336;
+        color: white;
+      }
+    }
+  }
+  

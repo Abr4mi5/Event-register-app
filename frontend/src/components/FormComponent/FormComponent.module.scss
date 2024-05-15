@@ -1,0 +1,50 @@
+.formContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #ffffff;
+}
+
+.formTitle {
+  margin-bottom: 2rem;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.fullWidth {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+}
+
+.loginButton {
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+}
+  
